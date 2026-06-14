@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forest Fire Prediction</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            background: linear-gradient(135deg, #0f5132, #198754, #6ab04c);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        .container {
+            text-align: center;
+            width: 80%;
+            max-width: 700px;
+            padding: 50px;
+            background: rgba(255, 255, 255, 0.12);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.7;
+            margin-bottom: 35px;
+            color: #f0f0f0;
+        }
+
+        .btn {
+            display: inline-block;
+            text-decoration: none;
+            background-color: #ffffff;
+            color: #198754;
+            padding: 15px 35px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            transform: translateY(-4px);
+            background-color: #d4edda;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+        }
+
+        .emoji {
+            font-size: 4rem;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="emoji">🌲🔥</div>
+
+        <h1>Forest Fire Prediction</h1>
+
+        <p>
+            Harness the power of Machine Learning to estimate the 
+            <strong>Fire Weather Index (FWI)</strong> based on environmental 
+            factors such as temperature, humidity, wind speed, and rainfall.
+        </p>
+
+        <a href="{{ url_for('predict_datapoint') }}" class="btn">
+            Predict Forest Fire Risk
+        </a>
+    </div>
+
+</body>
+</html>
