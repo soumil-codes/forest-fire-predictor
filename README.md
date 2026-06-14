@@ -129,15 +129,15 @@ http://127.0.0.1:5000
 
 ## 📸 Application Preview
 
-Add screenshots of the landing page and prediction interface here.
+## 📸 Application Preview
 
-Example:
+### Landing Page
 
-```
-screenshots/
-├── landing-page.png
-└── prediction-page.png
-```
+![Landing Page](screenshots/landing-page.png)
+
+### Prediction Page
+
+![Prediction Page](screenshots/prediction-page.png)
 
 ---
 
